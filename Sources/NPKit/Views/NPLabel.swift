@@ -19,6 +19,16 @@ open class NPLabel: UILabel {
 		self.translatesAutoresizingMaskIntoConstraints = false
 	}
 
+	public convenience init(text: String) {
+		self.init()
+		self.text = text
+	}
+
+	public convenience init(attributedText: NSAttributedString) {
+		self.init()
+		self.attributedText = attributedText
+	}
+
 	public required init?(coder: NSCoder) {
 		fatalError("init(coder:) has not been implemented")
 	}
