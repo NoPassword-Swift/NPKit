@@ -25,8 +25,8 @@ open class NPTableViewController: UITableViewController {
 		fatalError("init(coder:) has not been implemented")
 	}
 
-	public override func loadView() {
-		super.loadView()
+	open override func viewDidLoad() {
+		super.viewDidLoad()
 		switch self.tableView.style {
 			case .grouped, .insetGrouped:
 				self.view.backgroundColor = Color.systemGroupedBackground

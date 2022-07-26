@@ -21,8 +21,8 @@ open class NPViewController: UIViewController {
 		fatalError("init(coder:) has not been implemented")
 	}
 
-	public override func loadView() {
-		super.loadView()
+	open override func viewDidLoad() {
+		super.viewDidLoad()
 		self.view.backgroundColor = Color.systemBackground
 	}
 }
